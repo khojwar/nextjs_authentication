@@ -47,7 +47,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 <br>
 <br>
+
 ---
+
 ---
 
 # Documentation
@@ -532,8 +534,11 @@ export async function GET(request:NextRequest){
 
 <br>
 <br>
+
 ---
+
 ---
+
 # Front-End
 
 Tools:
@@ -861,8 +866,11 @@ export default function UserProfile({params}: any) {
 
 <br>
 <br>
+
 ---
+
 ---
+
 
 # Middleware
 For route protection: user logout bhayapaxi profile route maa jaana nadine
