@@ -147,6 +147,8 @@ DOMAIN=http://localhost:3000
 
 > Note: Process is same for forget password
 
+![image](https://github.com/user-attachments/assets/0e64da28-c18e-465a-a281-b651b3434843)
+
 *src/helpers/mailer.ts*
 
 ``` npm install nodemailer ```
