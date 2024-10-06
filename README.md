@@ -47,6 +47,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 <br>
 <br>
+---
+---
 
 # Documentation
 Source: 
@@ -62,7 +64,7 @@ Folder structures:
 
 
   
-- src/models/userModel.js
+*src/models/userModel.js*
 
 ```
 import mongoose from "mongoose";
@@ -145,7 +147,7 @@ DOMAIN=http://localhost:3000
 
 *src/helpers/mailer.ts*
 
-> npm install nodemailer
+``` npm install nodemailer ```
 
 ![image](https://github.com/user-attachments/assets/8aa6d306-d1ef-47bb-a39e-68495775e526)
 
@@ -271,6 +273,7 @@ export async function POST(request: NextRequest){
 
 
 After signup we want to verify email
+
 *src/app/api/users/verifyemail*
 
 - **Connect to Database:** Ensure connection using connect().
@@ -323,8 +326,8 @@ export async function POST(request: NextRequest){
 
 
 After verify email we want to login
-*src/app/api/users/login*
 
+*src/app/api/users/login*
 
 - **Connect to Database:** Establish connection using connect().
 - **Parse Request Body:** Extract email and password from the request body.
@@ -394,6 +397,7 @@ export async function POST(request: NextRequest){
 
 
 After login we want to get our information or profile
+
 *src/app/api/users/me*
 
 - **Connect to Database:** Ensure connection using connect().
@@ -432,8 +436,8 @@ export async function GET(request:NextRequest){
 
 
 At last user want to logout 
-*src/app/api/users/logout*
 
+*src/app/api/users/logout*
 
 - **Create Logout Response:** Construct a success response with the message "Logout successful".
 - **Clear JWT Cookie:** Set the token cookie to an empty value and set its expiration date to the past, effectively removing it.
@@ -462,11 +466,6 @@ export async function GET() {
         
     }
 ```
-
-
-
-
-
 
 
 Login gardaa hami cookies maa token (jwt token) set garekaa thiyau. 
@@ -500,7 +499,6 @@ export const getDataFromToken = (request: NextRequest) => {
 
 *src/app/api/me*
 
-
 - Connect to Database: Establish connection using connect().
 - Extract User ID from Token: Call getDataFromToken(request) to retrieve the user ID from the token.
 - Find User by ID: Query the User model for the user with the matching ID, excluding the password.
@@ -532,9 +530,11 @@ export async function GET(request:NextRequest){
 }
 ```
 
-
+<br>
+<br>
 ---
-#Front-End
+---
+# Front-End
 
 Tools:
 - Axios
@@ -700,15 +700,6 @@ export default function VerifyEmailPage() {
 
 
 
-
-
-
-
-
-
-
-
-
 *src/app/login*
 
 ```
@@ -848,6 +839,7 @@ export default function ProfilePage() {
 
 
 This is for dynamic route
+
 *src/app/id*
 
 ```
@@ -867,24 +859,9 @@ export default function UserProfile({params}: any) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+---
 ---
 
 # Middleware
